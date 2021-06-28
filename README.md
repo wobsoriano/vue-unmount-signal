@@ -18,7 +18,7 @@ yarn add @wobsoriano/use-unmount-signal
 </template>
 
 <script>
-import { defineComponent } from 'vue' // works with composition api plugin too
+import { defineComponent } from 'vue' // or @vue/composition-api
 import useUnmountSignal from '@wobsoriano/use-unmount-signal'
 
 export default defineComponent({
