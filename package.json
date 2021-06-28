@@ -1,6 +1,14 @@
 {
   "name": "@wobsoriano/use-unmount-signal",
   "version": "1.0.0",
+  "main": "./dist/use-unmount-signal.umd.js",
+  "module": "./dist/use-unmount-signal.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/use-unmount-signal.es.js",
+      "require": "./dist/use-unmount-signal.umd.js"
+    }
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
