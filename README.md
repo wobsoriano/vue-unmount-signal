@@ -1,4 +1,4 @@
-# use-unmount-signal
+# v-use-unmount-signal
 
 A port of [expo's use-unmount-signal](https://github.com/expo/use-unmount-signal) that cancels promises when a component is unmounted.
 
