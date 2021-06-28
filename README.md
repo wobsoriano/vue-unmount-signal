@@ -7,7 +7,7 @@ A port of [expo's use-unmount-signal](https://github.com/expo/use-unmount-signal
 ## Install
 
 ```sh
-yarn add @wobsoriano/use-unmount-signal
+yarn add v-use-unmount-signal
 ```
 
 ## Example
@@ -19,7 +19,7 @@ yarn add @wobsoriano/use-unmount-signal
 
 <script>
 import { defineComponent } from 'vue' // or @vue/composition-api
-import useUnmountSignal from '@wobsoriano/use-unmount-signal'
+import useUnmountSignal from 'v-use-unmount-signal'
 
 export default defineComponent({
     setup() {
