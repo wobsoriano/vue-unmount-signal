@@ -1,7 +1,7 @@
 {
   "name": "@wobsoriano/use-unmount-signal",
   "description": "A Vue Hook to cancel promises when a component is unmounted",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "./dist/use-unmount-signal.umd.js",
   "module": "./dist/use-unmount-signal.es.js",
   "exports": {
