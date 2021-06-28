@@ -1,5 +1,6 @@
 import path from 'path'
 import { defineConfig } from 'vite'
+import typescript from 'rollup-plugin-typescript2'
 
 export default defineConfig({
   build: {
@@ -18,5 +19,18 @@ export default defineConfig({
   },
   optimizeDeps: {
     exclude: ['vue-demi']
-  }
+  },
+  plugins: [
+    typescript({
+      check: true,
+      tsconfig: path.resolve(__dirname, 'tsconfig.json'),
+      tsconfigOverride: {
+        compilerOptions: {
+          sourceMap: false,
+          declaration: true,
+          declarationMap: true
+        }
+      }
+    })
+  ]
 })

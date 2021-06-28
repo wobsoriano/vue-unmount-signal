@@ -2,6 +2,8 @@
 
 A port of [expo's use-unmount-signal](https://github.com/expo/use-unmount-signal) that cancels promises when a component is unmounted.
 
+[AbortSignal API](https://dom.spec.whatwg.org/#interface-AbortSignal)
+
 ## Install
 
 ```sh
@@ -25,3 +27,7 @@ const ping = () => {
 }
 </script>
 ```
+
+## License
+
+MIT License © 2021 [Robert Soriano](https://github.com/wobsoriano)
