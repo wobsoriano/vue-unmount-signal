@@ -17,14 +17,21 @@ yarn add @wobsoriano/use-unmount-signal
   <button @click="ping">Ping</button>
 </template>
 
-<script setup>
-import useUnmountSignal from '@wobsoriano/use-unmount-signal';
+<script>
+import { defineComponent } from 'vue' // works with composition api plugin too
+import useUnmountSignal from '@wobsoriano/use-unmount-signal'
 
-const unmountSignal = useUnmountSignal();
+export default defineComponent({
+    setup() {
+        const unmountSignal = useUnmountSignal();
 
-const ping = () => {
-  fetch('https://ping.example.com', { signal: unmountSignal })
-}
+        return {
+            ping() {
+                fetch('https://ping.example.com', { signal: unmountSignal })
+            }
+        }
+    }
+})
 </script>
 ```
 
