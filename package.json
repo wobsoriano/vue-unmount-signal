@@ -7,7 +7,8 @@
   "module": "dist/v-use-unmount-signal.mjs",
   "typings": "dist/v-use-unmount-signal.d.ts",
   "scripts": {
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "test": "jest"
   },
   "dependencies": {
     "vue-demi": "latest"
@@ -22,12 +23,16 @@
     }
   },
   "devDependencies": {
+    "@types/jest": "^26.0.3",
     "esbuild": "^0.12.15",
+    "jest": "^26.1.0",
     "rollup": "^2.52.8",
     "rollup-plugin-dts": "^3.0.2",
     "rollup-plugin-esbuild": "^4.5.0",
+    "ts-jest": "^26.1.1",
     "typescript": "^4.3.5",
-    "vue": "^3.0.0"
+    "vue": "^3.0.0",
+    "vue-composable-tester": "^0.1.3"
   },
   "files": [
     "dist"
