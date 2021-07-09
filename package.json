@@ -1,18 +1,13 @@
 {
   "name": "v-use-unmount-signal",
-  "description": "A Vue Hook to cancel promises when a component is unmounted",
+  "description": "A Vue Hook to cancel promises when a component is unmounted.",
+  "license": "MIT",
   "version": "1.0.0",
-  "main": "./dist/use-unmount-signal.umd.js",
-  "module": "./dist/use-unmount-signal.es.js",
-  "types": "./dist/index.d.ts",
-  "exports": {
-    ".": {
-      "import": "./dist/use-unmount-signal.es.js",
-      "require": "./dist/use-unmount-signal.umd.js"
-    }
-  },
+  "main": "dist/v-use-unmount-signal.js",
+  "module": "dist/v-use-unmount-signal.mjs",
+  "typings": "dist/v-use-unmount-signal.d.ts",
   "scripts": {
-    "build": "tsc && vite build"
+    "build": "rollup -c"
   },
   "dependencies": {
     "vue-demi": "latest"
@@ -27,9 +22,11 @@
     }
   },
   "devDependencies": {
-    "rollup-plugin-typescript2": "^0.30.0",
-    "typescript": "^4.3.2",
-    "vite": "^2.3.8",
+    "esbuild": "^0.12.15",
+    "rollup": "^2.52.8",
+    "rollup-plugin-dts": "^3.0.2",
+    "rollup-plugin-esbuild": "^4.5.0",
+    "typescript": "^4.3.5",
     "vue": "^3.0.0"
   },
   "files": [
@@ -37,6 +34,6 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/wobsoriano/use-unmount-signal.git"
+    "url": "https://github.com/wobsoriano/v-use-unmount-signal.git"
   }
 }
