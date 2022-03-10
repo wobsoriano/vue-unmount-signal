@@ -7,7 +7,7 @@ A port of [expo's use-unmount-signal](https://github.com/expo/use-unmount-signal
 ## Install
 
 ```sh
-yarn add v-use-unmount-signal
+pnpm add v-use-unmount-signal
 ```
 
 ## Example
