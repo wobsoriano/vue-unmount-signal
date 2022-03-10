@@ -6,11 +6,11 @@ import { onUnmounted } from 'vue-demi'
  * component is unmounted.
  */
 export default function useUnmountSignal(): AbortSignal {
-    const abortController = new AbortController()
+  const abortController = new AbortController()
 
-    onUnmounted(() => {
-        abortController.abort()
-    })
+  onUnmounted(() => {
+    abortController.abort()
+  })
 
-    return abortController.signal
+  return abortController.signal
 }
