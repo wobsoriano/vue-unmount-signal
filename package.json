@@ -2,7 +2,7 @@
   "name": "v-use-unmount-signal",
   "description": "A Vue Hook to cancel promises when a component is unmounted.",
   "license": "MIT",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "exports": {
