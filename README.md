@@ -22,19 +22,19 @@ import { defineComponent } from 'vue' // or @vue/composition-api
 import useUnmountSignal from 'v-use-unmount-signal'
 
 export default defineComponent({
-    setup() {
-        const unmountSignal = useUnmountSignal();
+  setup() {
+    const unmountSignal = useUnmountSignal()
 
-        return {
-            ping() {
-                fetch('https://ping.example.com', { signal: unmountSignal })
-            }
-        }
+    return {
+      ping() {
+        fetch('https://ping.example.com', { signal: unmountSignal })
+      },
     }
+  },
 })
 </script>
 ```
 
 ## License
 
-MIT License © 2021 [Robert Soriano](https://github.com/wobsoriano)
+MIT
