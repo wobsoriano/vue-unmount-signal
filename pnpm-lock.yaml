@@ -7,8 +7,8 @@ specifiers:
   typescript: ^4.3.5
   vitest: ^0.6.0
   vue: ^3.2.31
-  vue-composable-tester: ^0.1.3
   vue-demi: latest
+  vue-test-composables: ^0.1.2
 
 dependencies:
   vue-demi: 0.12.1_vue@3.2.31
@@ -20,7 +20,7 @@ devDependencies:
   typescript: 4.6.2
   vitest: 0.6.0_happy-dom@2.46.0
   vue: 3.2.31
-  vue-composable-tester: 0.1.3
+  vue-test-composables: 0.1.2_vue@3.2.31
 
 packages:
 
@@ -1480,10 +1480,6 @@ packages:
       - stylus
     dev: true
 
-  /vue-composable-tester/0.1.3:
-    resolution: {integrity: sha512-iiJUoW88CwTFzbvjVLe30twrj6tmyTxMOM5aQfSjSlPtGaONFNAoNzR0T990sv4gpFPQIvo0fHPNRhKti46drQ==}
-    dev: true
-
   /vue-demi/0.12.1_vue@3.2.31:
     resolution: {integrity: sha512-QL3ny+wX8c6Xm1/EZylbgzdoDolye+VpCXRhI2hug9dJTP3OUJ3lmiKN3CsVV3mOJKwFi0nsstbgob0vG7aoIw==}
     engines: {node: '>=12'}
@@ -1497,7 +1493,19 @@ packages:
         optional: true
     dependencies:
       vue: 3.2.31
-    dev: false
+
+  /vue-test-composables/0.1.2_vue@3.2.31:
+    resolution: {integrity: sha512-WMTEnlLANJCAO2tslQhxFsYs4xva5jSHvi+/pePUstn4q0xJcOj9Pqyb2kPL2xLue3KmzAZUI1rhcyutrLCQWw==}
+    peerDependencies:
+      '@vue/composition-api': ^1.4.0
+      vue: ^2.6.14 || ^3.2.0
+    peerDependenciesMeta:
+      '@vue/composition-api':
+        optional: true
+    dependencies:
+      vue: 3.2.31
+      vue-demi: 0.12.1_vue@3.2.31
+    dev: true
 
   /vue/3.2.31:
     resolution: {integrity: sha512-odT3W2tcffTiQCy57nOT93INw1auq5lYLLYtWpPYQQYQOOdHiqFct9Xhna6GJ+pJQaF67yZABraH47oywkJgFw==}
