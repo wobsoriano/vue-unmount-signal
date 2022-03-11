@@ -1,5 +1,5 @@
 import { renderComposable } from 'vue-test-composables'
-import { nextTick } from 'vue'
+import { nextTick } from 'vue-demi'
 import useUnmountSignal from '../src'
 import { test, expect } from 'vitest'
 
