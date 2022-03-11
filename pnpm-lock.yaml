@@ -1,6 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
+  '@vue/composition-api': ^1.4.9
   bumpp: ^7.1.1
   happy-dom: ^2.46.0
   tsup: ^5.12.0
@@ -9,18 +10,21 @@ specifiers:
   vue: ^3.2.31
   vue-demi: latest
   vue-test-composables: ^0.1.2
+  vue2: npm:vue@2
 
 dependencies:
-  vue-demi: 0.12.1_vue@3.2.31
+  vue-demi: 0.12.1_ac2a42527c362575429f172d82b9d821
 
 devDependencies:
+  '@vue/composition-api': 1.4.9_vue@3.2.31
   bumpp: 7.1.1
   happy-dom: 2.46.0
   tsup: 5.12.0_typescript@4.6.2
   typescript: 4.6.2
   vitest: 0.6.0_happy-dom@2.46.0
   vue: 3.2.31
-  vue-test-composables: 0.1.2_vue@3.2.31
+  vue-test-composables: 0.1.2_ac2a42527c362575429f172d82b9d821
+  vue2: /vue/2.6.14
 
 packages:
 
@@ -131,6 +135,14 @@ packages:
     dependencies:
       '@vue/compiler-dom': 3.2.31
       '@vue/shared': 3.2.31
+    dev: true
+
+  /@vue/composition-api/1.4.9_vue@3.2.31:
+    resolution: {integrity: sha512-l6YOeg5LEXmfPqyxAnBaCv1FMRw0OGKJ4m6nOWRm6ngt5TuHcj5ZoBRN+LXh3J0u6Ur3C4VA+RiKT+M0eItr/g==}
+    peerDependencies:
+      vue: '>= 2.5 < 3'
+    dependencies:
+      vue: 3.2.31
     dev: true
 
   /@vue/reactivity-transform/3.2.31:
@@ -1480,7 +1492,7 @@ packages:
       - stylus
     dev: true
 
-  /vue-demi/0.12.1_vue@3.2.31:
+  /vue-demi/0.12.1_ac2a42527c362575429f172d82b9d821:
     resolution: {integrity: sha512-QL3ny+wX8c6Xm1/EZylbgzdoDolye+VpCXRhI2hug9dJTP3OUJ3lmiKN3CsVV3mOJKwFi0nsstbgob0vG7aoIw==}
     engines: {node: '>=12'}
     hasBin: true
@@ -1492,9 +1504,10 @@ packages:
       '@vue/composition-api':
         optional: true
     dependencies:
+      '@vue/composition-api': 1.4.9_vue@3.2.31
       vue: 3.2.31
 
-  /vue-test-composables/0.1.2_vue@3.2.31:
+  /vue-test-composables/0.1.2_ac2a42527c362575429f172d82b9d821:
     resolution: {integrity: sha512-WMTEnlLANJCAO2tslQhxFsYs4xva5jSHvi+/pePUstn4q0xJcOj9Pqyb2kPL2xLue3KmzAZUI1rhcyutrLCQWw==}
     peerDependencies:
       '@vue/composition-api': ^1.4.0
@@ -1503,8 +1516,13 @@ packages:
       '@vue/composition-api':
         optional: true
     dependencies:
+      '@vue/composition-api': 1.4.9_vue@3.2.31
       vue: 3.2.31
-      vue-demi: 0.12.1_vue@3.2.31
+      vue-demi: 0.12.1_ac2a42527c362575429f172d82b9d821
+    dev: true
+
+  /vue/2.6.14:
+    resolution: {integrity: sha512-x2284lgYvjOMj3Za7kqzRcUSxBboHqtgRE2zlos1qWaOye5yUmHn42LB1250NJBLRwEcdrB0JRwyPTEPhfQjiQ==}
     dev: true
 
   /vue/3.2.31:
