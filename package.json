@@ -24,7 +24,7 @@
   },
   "peerDependencies": {
     "@vue/composition-api": "^1.4.0",
-    "vue": "^2.6.14 || ^3.2.0"
+    "vue": "^2.7.0 || ^3.2.0"
   },
   "peerDependenciesMeta": {
     "@vue/composition-api": {
@@ -40,7 +40,7 @@
     "vitest": "^0.6.0",
     "vue": "^3.2.31",
     "vue2": "npm:vue@2",
-    "vue-test-composables": "^0.1.2"
+    "vue-test-composables": "^0.1.5"
   },
   "files": [
     "dist"
