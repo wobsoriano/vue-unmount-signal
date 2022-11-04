@@ -1,4 +1,4 @@
-import { getCurrentInstance, onUnmounted } from 'vue-demi'
+import { getCurrentInstance, onScopeDispose } from 'vue-demi'
 
 /**
  * A Vue Hook that returns an AbortSignal that is marked as aborted when the calling component is
@@ -9,7 +9,7 @@ export default function useUnmountSignal(): AbortSignal {
   const abortController = new AbortController()
 
   if (getCurrentInstance()) {
-    onUnmounted(() => {
+    onScopeDispose(() => {
       abortController.abort()
     })
   }
