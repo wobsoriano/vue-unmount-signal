@@ -43,11 +43,11 @@ const el = ref()
 onMounted(() => {
   el.value.addEventListener('mousemove', e => {
     // do something
-  }, { signal: unmountSignal });
+  }, { signal: unmountSignal })
 
   el.value.addEventListener('mouseup', e => {
     // do something
-  }, { signal: unmountSignal });
+  }, { signal: unmountSignal })
 })
 </script>
 
