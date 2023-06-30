@@ -34,7 +34,7 @@ const ping = () => {
 
 ```vue
 <script setup>
-import { onMounted, onUnmounted, ref } from 'vue'
+import { onMounted, ref } from 'vue'
 import useUnmountSignal from 'v-use-unmount-signal'
 
 const unmountSignal = useUnmountSignal()
