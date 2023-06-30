@@ -1,13 +1,11 @@
-# v-use-unmount-signal
+# vue-unmount-signal
 
-A port of [expo's use-unmount-signal](https://github.com/expo/use-unmount-signal) that cancels promises when a component is unmounted. Works with Vue 2 and 3.
-
-[AbortSignal API](https://dom.spec.whatwg.org/#interface-AbortSignal)
+A composable that cancels promises when a component is unmounted. It uses [the W3C-standard `AbortSignal` API](https://dom.spec.whatwg.org/#interface-AbortSignal) to notify compatible promises when the calling component is unmounted.
 
 ## Install
 
 ```sh
-pnpm add v-use-unmount-signal
+pnpm add vue-unmount-signal
 ```
 
 ## Example
@@ -16,7 +14,7 @@ pnpm add v-use-unmount-signal
 
 ```vue
 <script setup>
-import useUnmountSignal from 'v-use-unmount-signal'
+import useUnmountSignal from 'vue-unmount-signal'
 
 const unmountSignal = useUnmountSignal()
 
@@ -35,7 +33,7 @@ const ping = () => {
 ```vue
 <script setup>
 import { onMounted, ref } from 'vue'
-import useUnmountSignal from 'v-use-unmount-signal'
+import useUnmountSignal from 'vue-unmount-signal'
 
 const unmountSignal = useUnmountSignal()
 const el = ref()
