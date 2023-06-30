@@ -67,6 +67,8 @@ const handleClick = async () => {
 </template>
 ```
 
+Credits to Expo's [use-unmount-signal](https://github.com/expo/use-unmount-signal).
+
 ## License
 
 MIT
