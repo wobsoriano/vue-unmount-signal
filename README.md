@@ -41,21 +41,13 @@ const unmountSignal = useUnmountSignal()
 const el = ref()
 
 onMounted(() => {
-  el.value.addEventListener('mousedown', e => {
-    if (e.buttons !== 1) return;
+  el.value.addEventListener('mousemove', e => {
+    // do something
+  }, { signal: unmountSignal });
 
-    const controller = new AbortController();
-
-    window.addEventListener('mousemove', e => {
-      if (e.buttons !== 1) return;
-      /* work */
-    }, { signal: controller.signal });
-
-    window.addEventListener('mouseup', e => {
-      if (e.buttons & 1) return;
-      controller.abort();
-    }, { signal: controller.signal });
-  });
+  el.value.addEventListener('mouseup', e => {
+    // do something
+  }, { signal: unmountSignal });
 })
 </script>
 
